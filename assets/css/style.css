@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/***********************************top **************/
+.limita-largura {
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+.top {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 79px;
+    background: #FFD900;
+}
+
+.top img {
+    width: 120px;
+}
+
+/********************************************/
+
+main {
+    margin-top: 10px !important;
+    display: flex;
+}
+
+main section:nth-of-type(1) {
+    background: #514988;
+    flex-basis: calc(50% - 5px);
+    margin-right: 5px;
+    padding: 0 20px;
+}
+
+main section:nth-of-type(1) h1 {
+    margin-top: 20px;
+    font-size: 35px;
+    color: #F3C61F;
+    text-align: center;
+
+}
+
+main section:nth-of-type(1) h2 {
+    font-size: 16px;
+    line-height: 32.5px;
+    color: #FFF;
+    text-align: center;
+}
+
+main section:nth-of-type(1) p {
+    font-weight: 400;
+    font-size: 14.5px;
+    line-height: 1.3em;
+    color: #FFF;
+    text-align: center;
+}
+
+
+/********************************************/
+
+main section:nth-of-type(2) {
+    flex-basis: calc(50% - 5px);
+
+}
+
+main section:nth-of-type(2) .box-timer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    color: #514988;
+}
+
+main section:nth-of-type(2) h1 {
+    font-size: 15px;
+    line-height: 36px;
+    color: #E33881;
+}
+
+main section:nth-of-type(2) video {
+    width: 100%;
+}
+
+
+
+/*********************************************/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer section .box {
+    display: flex;
+}
+
+footer section h1 {
+    margin: 10px 0;
+    font-size: 13.5px;
+    color: #F3C61F;
+}
+
+footer section .box img {
+    width: 102px;
+    height: 102px
+}
+
+footer section button {
+    margin: 20px 0 0;
+    width: 298px;
+    height: 74px;
+    border: none;
+    background-color: #514988;
+    border-radius: 20px;
+}
+
+footer section button a {
+    font-size: 21px;
+    line-height: 51px;
+    color: #FFF;
+}
+
+footer section button a:hover{
+    color: #F3C61F;
+    transition: ease 0.3s;
+}
+
+
+.card-ingresso{
+    box-shadow: 5px 5px 5px 0px #514988;
+    transition: ease 0.3s;
+}
+
+
+
+/*******************************************************************************************/
+
+
+/****750****/
+
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+        padding: 0 0 20px;
+    }
+
+
+    main section:nth-of-type(1) {
+       flex-basis: 100%;
+        padding: 20px;
+        margin-right: 0px;
+    }
+
+    main section:nth-of-type(2) {
+        flex-basis: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main section:nth-of-type(2) h1 {
+        margin: 10px 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    footer section button {
+        margin: 20px 0 50px;
+
+    }
+}
+
+
+/**********************440**********************/
+
+@media (max-width: 440px){
+
+
+    footer section h1 {
+       text-align: center;
+        margin: 10px 0;
+        font-size: 13.5px;
+        color: #F3C61F;
+    }
+
+    main section:nth-of-type(2) .box-timer {
+        font-size: 30px;
+    }
+
+    footer section .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer section button a {
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFF;
+    }
+
+    footer section h1 {
+        text-align: center;
+         margin: 10px 0;
+         font-size: 18px;
+         padding: 20px
+
+     }
+}
+
+@media (max-width: 400px){
+ 
+    .top {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        height: 99px;
+        background: #FFD900;
+    }
+    
+    .top img {
+        width: 151px;
+    }
+
+    main section:nth-of-type(2) .box-timer {
+        font-size: 25px;
+    }
+
+
+    footer section .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    footer section .box img{
+        margin: 10px;
+    }
+
+    footer section button {
+        margin: 30px 0 50px;
+        width: 257px;
+        height: 76px;
+        border: none;
+        border-radius: 10px;
+    }
+   
+}
